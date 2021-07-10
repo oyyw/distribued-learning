@@ -115,7 +115,7 @@ func (rf *Raft) GetState() (int, bool) {
 // save Raft's persistent state to stable storage,
 // where it can later be retrieved after a crash and restart.
 // see paper's Figure 2 for a description of what should be persistent.
-//--
+//---------------------------persist-------------------------------
 func (rf *Raft) persist() {
 	// Your code here (2C).
 	//
@@ -144,7 +144,6 @@ func (rf *Raft)raftStateForPersist() []byte {
 	data := w.Bytes()
 	return data
 }
-
 
 //
 // restore previously persisted state.
@@ -179,7 +178,7 @@ func (rf *Raft) readPersist(data []byte) {
 	//   rf.yyy = yyy
 	// }
 }
-
+//-------------------------------persist--------------------------
 
 //
 // A service wants to switch to snapshot.  Only do so if Raft hasn't
