@@ -1,5 +1,9 @@
 # distribued-learning，此仓库用于学习、管理分布式
 
+## Raft协议
+
+* 此协议代码在 src/Raft/raft.go
+
 ### 一. 对于Raft的一些思考
 
 #### 1. Raft协议如何保证不删除已提交日志和避免提交前任未提交日志
