@@ -16,5 +16,5 @@
 #### Raft协议问题总结(二): 冲突Term和Index的回退优化
 <https://blog.csdn.net/ouyangyiwen/article/details/119902194>
 
-####Log peisist 实现
+#### Log peisist 实现
 <https://blog.csdn.net/ouyangyiwen/article/details/119922672>
